@@ -37,13 +37,13 @@ function getpdfs(){
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
       var msgdiv = document.getElementById("msgs");
       if (isJson(bdata)){
-      // console.log(bdata);
+      console.log(bdata);
       var jsondata = JSON.parse(bdata);
       // console.log(jsondata);
       updatetoolbar(jsondata);
       displayinitial();
     }}
-  //   else {console.log('response:  ' + xmlhttp.responseText);}
+    else {console.log('response:  ' + xmlhttp.responseText);}
   }
   xmlhttp.open("GET", "content.php", true);
   xmlhttp.send();
