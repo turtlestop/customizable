@@ -121,8 +121,15 @@ function updatetoolbar(obj){
     }
   }}
   for (var key in columndict){
+    headers = {
+      "TODAY": "Today",
+      "CALENDAR": "Calendar",
+      "forms": "Forms",
+      "staff": "Staff & Crew",
+      "building": "Building"
+    }
     var head = document.getElementById(key+'l');
-    head.innerHTML = columndict[key];
+    head.innerHTML = headers[key];
     if (columndict[key].length > 1){
       var head = document.getElementById(key+'l');
       var newt = '&#9660 ' + head.innerHTML;
