@@ -68,7 +68,7 @@ function deletepdf(id){
   formData.append("act","del");
   formData.append("id", id);
   formData.append("path", path);
-  xmlhttp.open("POST", "http://localhost:8888/upload.php", true);
+  xmlhttp.open("POST", "upload.php", true);
   xmlhttp.send(formData);
   return false;
 }
@@ -199,7 +199,7 @@ function upload(){
   formData.append("act", "up")
 var xhr = new XMLHttpRequest();
 
-  xmlhttp.open("POST", "http://localhost:8888/upload.php", true);
+  xmlhttp.open("POST", "upload.php", true);
   // xmlhttp.setRequestHeader("Content-type", "image/png");
   xmlhttp.send(formData);
   console.log(formData);
@@ -221,7 +221,7 @@ xmlhttp.onreadystatechange = function() {
       updatetoolbar(jsondata);
     }}
     };
-xmlhttp.open("GET", "http://localhost:8888/content.php", true);
+xmlhttp.open("GET", "content.php", true);
 xmlhttp.send();
 };
 

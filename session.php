@@ -1,6 +1,13 @@
 <?php
+
+$dbname = "heroku_387cf972599d81e";
+$rootname ="b301d1b1d5515f";
+$rootword = "7474867e";
+$servername = "us-cdbr-iron-east-03.cleardb.net";
+
+
 // Establishing Connection with Server by passing server_name, user_id and password as a parameter
-$connection = new mysqli("localhost", "root", "root", "bulletin");
+$connection = new mysqli($servername, $rootname, $rootnote, $dbname);
 // Selecting Database
 session_start();// Starting Session
 // Storing Session
