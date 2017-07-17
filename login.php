@@ -14,10 +14,15 @@ else
 $username=$_POST['username'];
 $password=$_POST['password'];
 
-$servername = 'localhost';
-$rootname = 'root';
-$rootword = 'root';
-$dbname = 'bulletin';
+$CLEAR_DATABASE_URL = "mysql://b301d1b1d5515f:7474867e@us-cdbr-iron-east-03.cleardb.net/heroku_387cf972599d81e?reconnect=true";
+
+$url = parse_url(getenv($CLEAR_DATABASE_URL));
+
+$servername = $url["host"];
+$rootname = $url["user"];
+$rootword = $url["pass"];
+$dbname = substr($url["path"], 1);
+
 // Establishing Connection with Server by passing server_name, user_id and password as a parameter
 $connection = new mysqli($servername, $rootname, $rootword, $dbname);
 // echo $connection;
