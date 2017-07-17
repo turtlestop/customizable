@@ -39,10 +39,10 @@ if (file_exists($nfile)) {
     unlink($nfile);
 }
 // Check file size
-// if ($_FILES["newpdf"]["size"] > 500000) {
-//     echo "sizeerror";
-//     $uploadOk = 0;
-// }
+if ($_FILES["newpdf"]["size"] > 500000) {
+    echo "sizeerror";
+    $uploadOk = 0;
+}
 // Allow certain file formats
 if($imageFileType != "pdf") {
     echo "typeerror";

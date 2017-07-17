@@ -31,6 +31,12 @@ if ($act === "save"){
     $filename = 'imageuploads/' . $fprefix . '.' . $ext;
 
     $check = getimagesize($_FILES["image"]["tmp_name"]);
+
+    if ($check > 999999) {
+        echo "Please keep image files below 1MB.";
+        $uploadOk = 0;
+    }
+
     $filetype = substr($check['mime'], 0, 5);
     // echo $filetype;
     if($filetype !== 'image') {
