@@ -286,6 +286,7 @@ function updatetoolbar(obj){
     var column = obj[i]['columncat']
     masterdict[id] = [path, column, name];
     var dropd = document.getElementById(obj[i]['columncat']);
+    console.log(obj[i]['columncat']);
 
 
     var newfile = document.createElement('div');
