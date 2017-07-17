@@ -4,7 +4,7 @@ include('session.php');
 $dbname = getenv("DBNAME");
 $username =getenv("USERNAME");
 $pword = getenv("PASSWORD");
-$servername = getenv("SERVERNAME")
+$servername = getenv("SERVERNAME");
 
 $act = $_POST['act'];
 

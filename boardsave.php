@@ -8,7 +8,7 @@ $act = $_POST["act"];
 $dbname = getenv("DBNAME");
 $username =getenv("USERNAME");
 $password = getenv("PASSWORD");
-$servername = getenv("SERVERNAME")
+$servername = getenv("SERVERNAME");
 
 if ($act === "save"){
   include('session.php');

@@ -10,9 +10,9 @@
 // $dbname = substr($url["path"], 1);
 
 $dbname = getenv("DBNAME");
-$username =getenv("USERNAME");
+$username = getenv("USERNAME");
 $pword = getenv("PASSWORD");
-$servername = getenv("SERVERNAME")
+$servername = getenv("SERVERNAME"); 
 
 // Create connection
 $conn = new mysqli($servername, $username, $pword, $dbname);
