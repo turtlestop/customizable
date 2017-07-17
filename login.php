@@ -24,12 +24,6 @@ $connection = new mysqli($servername, $rootname, $rootword, $dbname);
 if ($conn->connect_error) {
       die("Connection failed: " . $conn->connect_error);
   }
-// // To protect MySQL injection for Security purpose
-// $username = stripslashes($username);
-// $password = stripslashes($password);
-// $username = mysqli_real_escape_string($username);
-// $password = mysqli_real_escape_string($password);
-
 // // SQL query to fetch information of registerd users and finds user match.
 $query = "SELECT * from login where password='$password' AND username='$username'";
 $result = $connection->query($query);

@@ -48,11 +48,7 @@ if($imageFileType != "pdf") {
     echo "typeerror";
     $uploadOk = 0;
 }
-//
-// echo $uploadOk;
-// // echo $UPLOAD_ERR_OK;
 
-// // echo "error: " . $_FILES["ERROR"] . "<br>";
 // // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == 0) {
     echo "Sorry, your file was not uploaded.";

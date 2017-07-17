@@ -1,18 +1,9 @@
 <?php
 
-// $CLEAR_DATABASE_URL = "mysql://b301d1b1d5515f:7474867e@us-cdbr-iron-east-03.cleardb.net/heroku_387cf972599d81e?reconnect=true";
-//
-// $url = parse_url(getenv($CLEAR_DATABASE_URL));
-//
-// $servername = $url["host"];
-// $username = $url["user"];
-// $pword = $url["pass"];
-// $dbname = substr($url["path"], 1);
-
 $dbname = getenv("DBNAME");
 $username = getenv("USERNAME");
 $pword = getenv("PASSWORD");
-$servername = getenv("SERVERNAME"); 
+$servername = getenv("SERVERNAME");
 
 // Create connection
 $conn = new mysqli($servername, $username, $pword, $dbname);

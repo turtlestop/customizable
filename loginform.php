@@ -1,9 +1,6 @@
 <?php
 include('login.php'); // Includes Login Script
 
-// if(isset($_SESSION['login_user'])){
-// header("location: profile.php");
-// }
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,12 +9,6 @@ include('login.php'); // Includes Login Script
 <link href="styles/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
-<script>
-// var j = <?php $_?>
-
-console.log('testg');
-</script>
 
 <header>
 <div id="headerdiv">
