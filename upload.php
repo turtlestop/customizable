@@ -4,6 +4,11 @@ include('session.php');
 // $username = $_SESSION['login_user'];
 // $password = $_SESSION['pass'];
 
+$dbname = "heroku_387cf972599d81e";
+$username ="b301d1b1d5515f";
+$password = "7474867e";
+$servername = "us-cdbr-iron-east-03.cleardb.net";
+
 $act = $_POST['act'];
 if ($act == 'up'){
 $dir = "pdfs/";
@@ -68,10 +73,6 @@ if ($uploaded == 1){
   $column = $_POST['ffunc'];
   //
 
-  $dbname = "heroku_387cf972599d81e";
-  $username ="b301d1b1d5515f";
-  $password = "7474867e";
-  $servername = "us-cdbr-iron-east-03.cleardb.net";
 
   //
   $conn = new mysqli($servername, $username, $password, $dbname);
@@ -114,9 +115,6 @@ elseif ($act == 'del'){
   $delid = $_POST['id'];
   $delpath = $_POST['path'];
 
-  $servername = "localhost";
-
-  $dbname = "bulletin";
   // echo $pword;
   // Create connection
   $conn = new mysqli($servername, $username, $password, $dbname);
