@@ -216,11 +216,11 @@ window.onload = function() {
   console.log('running');
   getpdfs()
   document.getElementById("bulletin").onclick = function() {displaybboard(); return false}
-  document.getElementById("todayl").onclick = function(){showdrop("first"); return false};
+  document.getElementById("TODAYl").onclick = function(){showdrop("first"); return false};
   document.getElementById("staffl").onclick = function(){showdrop("staffb"); return false};
   document.getElementById("formsl").onclick = function(){showdrop("formsb"); return false};
   document.getElementById("buildingl").onclick = function(){showdrop("buildingb"); return false};
-  document.getElementById("calendarl").onclick = function(){showdrop("calendarb"); return false};
+  document.getElementById("CALENDARl").onclick = function(){showdrop("calendarb"); return false};
 
   // document.getElementById("futureb").onclick = function(){console.log(this.id);showdrop(this.id); return false};
   // document.getElementById("bulletin").onclick = function(){console.log("hi!");displaybboard(); return false}
