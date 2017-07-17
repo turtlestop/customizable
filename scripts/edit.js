@@ -86,7 +86,7 @@ xmlhttp.onreadystatechange = function() {
       }
     };
 text = 'act=load';
-xmlhttp.open("POST", "http://localhost:8888/boardsave.php", true);
+xmlhttp.open("POST", "boardsave.php", true);
 xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 xmlhttp.send(text);
 };
@@ -129,7 +129,7 @@ function deletemsg(){
         }
       };
   text = 'act=del&delid=' + delid + '&delpath=' + delpath;
-  xmlhttp.open("POST", "http://localhost:8888/boardsave.php", true);
+  xmlhttp.open("POST", "boardsave.php", true);
   xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xmlhttp.send(text);
 }
@@ -166,7 +166,7 @@ function savef() {
   else {
     console.log("no image!");
   }
-  xmlhttp.open("POST", "http://localhost:8888/boardsave.php", true);
+  xmlhttp.open("POST", "boardsave.php", true);
   // xmlhttp.setRequestHeader("Content-type", "image/png");
   xmlhttp.send(formData);
 
