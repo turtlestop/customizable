@@ -9,7 +9,7 @@
 // $pword = $url["pass"];
 // $dbname = substr($url["path"], 1);
 
-$dbname = "heroku_387cf972599d81e";
+$dbname = getenv($DBNAME);
 $username ="b301d1b1d5515f";
 $pword = "7474867e";
 $servername = "us-cdbr-iron-east-03.cleardb.net";

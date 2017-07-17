@@ -296,7 +296,7 @@ Select the menu in which the pdf should placed:
 <select id="ffunc">
   <option value="TODAY">Today</option>
   <option value="CALENDAR">Calendar</option>
-  <option value="forms">FORMS</option>
+  <option value="forms">Forms</option>
   <option value="staff">Staff & Crew</option>
   <option value="building">Building</option>
 </select><br>
