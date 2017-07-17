@@ -33,7 +33,7 @@ function getpdfs(){
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     var bdata = xmlhttp.responseText;
-    // console.log('response: ' + bdata);
+    console.log('response: ' + bdata);
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
       var msgdiv = document.getElementById("msgs");
       if (isJson(bdata)){
@@ -43,7 +43,7 @@ function getpdfs(){
       updatetoolbar(jsondata);
       displayinitial();
     }}
-    // else {console.log('response:  ' + xmlhttp.responseText);}
+    else {console.log('response:  ' + xmlhttp.responseText);}
   }
   xmlhttp.open("GET", "content.php", true);
   xmlhttp.send();
