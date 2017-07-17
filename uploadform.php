@@ -81,8 +81,8 @@ function removeChildren(dom){
 function updatetoolbar(obj){
     masterdict={}
     columndict={}
-    removeChildren(document.getElementById("today"))
-    removeChildren(document.getElementById("calendar"))
+    removeChildren(document.getElementById("TODAY"))
+    removeChildren(document.getElementById("CALENDAR"))
     removeChildren(document.getElementById("forms"))
     removeChildren(document.getElementById("staff"))
     removeChildren(document.getElementById("building"))
