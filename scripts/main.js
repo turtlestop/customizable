@@ -197,7 +197,6 @@ function displaybboard() {
 
 function showdrop(id){
   var button = document.getElementById(id)
-
   var drop = button.childNodes[3];
   var linkb = button.childNodes[1];
   console.log('showdopr ' + linkb);
@@ -220,7 +219,7 @@ window.onload = function() {
   document.getElementById("staffl").onclick = function(){showdrop("staffb"); return false};
   document.getElementById("formsl").onclick = function(){showdrop("formsb"); return false};
   document.getElementById("buildingl").onclick = function(){showdrop("buildingb"); return false};
-  document.getElementById("CALENDARl").onclick = function(){showdrop("calendarb"); return false};
+  document.getElementById("CALENDARl").onclick = function(){showdrop("CALENDARb"); return false};
 
   // document.getElementById("futureb").onclick = function(){console.log(this.id);showdrop(this.id); return false};
   // document.getElementById("bulletin").onclick = function(){console.log("hi!");displaybboard(); return false}
@@ -261,8 +260,8 @@ var masterdict = {};
 columndict = {};
 todaylist = []
 headers = {
-  "today": "Today",
-  "calendar": "Calendar",
+  "TODAY": "Today",
+  "CALENDAR": "Calendar",
   "forms": "Forms",
   "staff": "Staff & Crew",
   "building": "Building"
