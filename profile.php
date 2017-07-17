@@ -10,8 +10,6 @@ include('session.php');
 </head>
 <body>
 
-<!-- <script type="text/javascript" src="scripts/pdfobject.js"></script> -->
-<!-- <script type="text/javascript" src="scripts/edit.js"></script> -->
 
 <header>
   <div id="headerdiv">

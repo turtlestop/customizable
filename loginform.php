@@ -28,7 +28,7 @@ include('login.php'); // Includes Login Script
   <div id="uform">
   <h2>Login Form</h2>
   <div id="login">
-  <h3>Please enter your login details:</h3>
+  <h3>Please enter your login details (HINT: username = 'test'; password = 'test'):</h3>
   <form action="" method="post">
   <label>Username :</label>
   <input id="name" name="username" placeholder="username" type="text">

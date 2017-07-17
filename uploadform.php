@@ -8,8 +8,6 @@ include('session.php');
 </head>
 <body onload="getpdfs()">
 
-<!-- <script type="text/javascript" src="scripts/pdfobject.js"></script> -->
-<!-- <script type="text/javascript" src="scripts/main2.js"></script> -->
 
 <header>
 <div id="headerdiv">
@@ -107,7 +105,6 @@ function updatetoolbar(obj){
     newfile.innerHTML = "<a href='' id='test'>Delete: " + obj[i]['filename'] + "</a>"
     newfile.id = id;
     dropd.appendChild(newfile);
-    // var test = document.getElementById('test');
     newfile.className = "dropcell";
     newfile.onclick = nav;
     var check = 1
@@ -139,41 +136,6 @@ function updatetoolbar(obj){
   }
 }
 
-// function updatetoolbar(obj){
-//   removeChildren(document.getElementById("today"))
-//   removeChildren(document.getElementById("calendar"))
-//   removeChildren(document.getElementById("forms"))
-//   removeChildren(document.getElementById("staff"))
-//   removeChildren(document.getElementById("building"))
-//   removeChildren(document.getElementById("future"))
-//   if (obj){
-//   for (i=0; i<obj.length; i++){
-//     // console.log(i);
-//     if (obj[i]['columncat'] !== ""){
-//     var menu = obj[i]['columncat'];
-//     var title = obj[i]['filename'];
-//     var id = obj[i]['id']
-//     var column = document.getElementById(menu);
-//     var check = 0;
-//       for (var j=0; j<column.childNodes.length; j++){
-//         if (column.childNodes[j].id == id){
-//           console.log(column.childNodes[j].id);
-//           check = 1;
-//         }
-//       }
-//     if (check == 0){
-//     var newmenuitem = document.createElement('div');
-//     newmenuitem.id = obj[i]['id'];
-//     newmenuitem.innerHTML = title + "<br><a href=''>x</a>";
-//     newmenuitem.className = "filetile";
-//     newmenuitem.onclick = function(){deletepdf(this.id); return false}
-//     column.appendChild(newmenuitem)
-//   }
-//   }
-//
-// }}
-// }
-
 function upload(){
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
@@ -193,7 +155,7 @@ function upload(){
         }
       }
       };
-  // text = 'fname=' + fname + '&fmsg=' + fmsg + '&fpwd=' + fpwd + '&act=save';
+
   var getfile = document.getElementById("fileToUpload").files[0];
   var filefunction = document.getElementById("ffunc").value;
   var title = document.getElementById("title").value;
@@ -207,7 +169,6 @@ function upload(){
   var xhr = new XMLHttpRequest();
   console.log(formData.keys());
   xmlhttp.open("POST", "upload.php", true);
-  // xmlhttp.setRequestHeader("Content-type", "image/png");
   xmlhttp.send(formData);
 }
 
@@ -218,12 +179,10 @@ xmlhttp.onreadystatechange = function() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
       var msgdiv = document.getElementById("msgs");
       var bdata = xmlhttp.responseText;
-      // console.log(bdata);
+
       if (bdata != ""){
-      // console.log(bdata);
+
       var jsondata = JSON.parse(bdata);
-      // console.log(bdata);
-      // console.log(jsondata);
       updatetoolbar(jsondata);
     }}
     };
@@ -256,8 +215,6 @@ window.onload = function() {
   document.getElementById("buildingl").onclick = function(){showdrop("buildingb"); return false};
   document.getElementById("CALENDARl").onclick = function(){showdrop("CALENDARlb"); return false};
 
-  // document.getElementById("futureb").onclick = function(){console.log(this.id);showdrop(this.id); return false};
-  // document.getElementById("bulletin").onclick = function(){console.log("hi!");displaybboard(); return false}
   return false;
 }
 </script>

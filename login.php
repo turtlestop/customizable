@@ -27,16 +27,14 @@ if ($conn->connect_error) {
 // // SQL query to fetch information of registerd users and finds user match.
 $query = "SELECT * from login where password='$password' AND username='$username'";
 $result = $connection->query($query);
-// $error = $password;
-// echo $result;
 if ($result->num_rows > 0) {
-  // $error = "hmm";
+
 $_SESSION['login_user']=$username; // Initializing Session
 $_SESSION['pass'] = $password;
 $_SESSION['test'] = "green";
 
 $error = 'ok, SESSION[login_user] is ' . $_SESSION['login_user'] . ' and SESSION[pass] is ' . $_SESSION['pass'];
-// $error = 'cooleo';
+
 header("location: profile.php"); // Redirecting To Other Page
 }
  else {
