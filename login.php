@@ -53,7 +53,7 @@ $_SESSION['test'] = "green";
 
 $error = 'ok, SESSION[login_user] is ' . $_SESSION['login_user'] . ' and SESSION[pass] is ' . $_SESSION['pass'];
 // $error = 'cooleo';
-// header("location: profile.php"); // Redirecting To Other Page
+header("location: profile.php"); // Redirecting To Other Page
 }
  else {
 

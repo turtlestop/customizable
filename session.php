@@ -7,7 +7,7 @@ $servername = "us-cdbr-iron-east-03.cleardb.net";
 
 
 // Establishing Connection with Server by passing server_name, user_id and password as a parameter
-$connection = new mysqli($servername, $rootname, $rootname, $dbname);
+$connection = new mysqli($servername, $rootname, $rootnword, $dbname);
 // Selecting Database
 session_start();// Starting Session
 // Storing Session
