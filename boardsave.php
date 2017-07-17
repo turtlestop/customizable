@@ -114,8 +114,8 @@ elseif ($act === "del"){
   $del = $_POST["delid"];
   $delpath = $_POST["delpath"];
 
-  $password = $_SESSION['pass'];
-  $username = $_SESSION['login_user'];
+  // $password = $_SESSION['pass'];
+  // $username = $_SESSION['login_user'];
 
   // echo "tesingg";
   // Create connection
