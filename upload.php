@@ -1,15 +1,13 @@
 <?php
 include('session.php');
 
-// $username = $_SESSION['login_user'];
-// $password = $_SESSION['pass'];
-
 $dbname = "heroku_387cf972599d81e";
 $username ="b301d1b1d5515f";
 $password = "7474867e";
 $servername = "us-cdbr-iron-east-03.cleardb.net";
 
 $act = $_POST['act'];
+
 if ($act == 'up'){
 $dir = "pdfs/";
 $name = $_FILES['newpdf']['name'];

@@ -196,13 +196,12 @@ function upload(){
 );
   formData.append("ffunc",filefunction);
   formData.append("title", title);
-  formData.append("act", "up")
-var xhr = new XMLHttpRequest();
-
+  formData.append("act", "up");
+  var xhr = new XMLHttpRequest();
+  console.log(formData.keys());
   xmlhttp.open("POST", "upload.php", true);
   // xmlhttp.setRequestHeader("Content-type", "image/png");
   xmlhttp.send(formData);
-  console.log(formData);
 }
 
 function getpdfs(){
