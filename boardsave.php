@@ -7,16 +7,14 @@ $act = $_POST["act"];
 
 $dbname = "heroku_387cf972599d81e";
 $username ="b301d1b1d5515f";
-$pword = "7474867e";
+$password = "7474867e";
 $servername = "us-cdbr-iron-east-03.cleardb.net";
-
-$act = $_POST["act"];
 
 if ($act === "save"){
   include('session.php');
 
-  $password = $_SESSION['pass'];
-  $username = $_SESSION['login_user'];
+  // $password = $_SESSION['pass'];
+  // $username = $_SESSION['login_user'];
 
   if ($_FILES["image"] == NULL){
     $filename = "none";
@@ -91,7 +89,7 @@ elseif ($act === "load") {
   // Create connection
   // $pword = 'root';
   // $username = 'root';
-  $conn = new mysqli($servername, $username, $pword, $dbname);
+  $conn = new mysqli($servername, $username, $password, $dbname);
   // Check connection
   if ($conn->connect_error) {
       die("Connection failed: " . $conn->connect_error);
