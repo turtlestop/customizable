@@ -9,6 +9,7 @@ $servername = "us-cdbr-iron-east-03.cleardb.net";
 $act = $_POST['act'];
 
 if ($act == 'up'){
+
 $dir = "pdfs/";
 $name = $_FILES['newpdf']['name'];
 $uploaded = 0;

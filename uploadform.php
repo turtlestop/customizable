@@ -287,8 +287,8 @@ Select file to upload:
       <br>
 Select the menu in which the pdf should placed:
 <select id="ffunc">
-  <option value="today">Today</option>
-  <option value="calendar">Calendar</option>
+  <option value="TODAY">Today</option>
+  <option value="CALENDAR">Calendar</option>
   <option value="forms">FORMS</option>
   <option value="staff">Staff & Crew</option>
   <option value="building">Building</option>
