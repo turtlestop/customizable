@@ -44,7 +44,7 @@ include('session.php');
 
     <div id="buttondiv">
     <div id="imgupload">
-      Attach Image (no larger than 1MB!): <input type="file" id="image" data-button-text="asf">
+      Attach Image (no larger than 1MB. NOTE: heroku won't store files longer than a single session.): <input type="file" id="image" data-button-text="asf">
     </div>
     <div id="submit">
       <button type="button" onclick="savef()">Post Message.</button>
