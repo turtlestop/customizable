@@ -122,7 +122,7 @@ function updatetoolbar(obj){
   }}
   for (var key in columndict){
     var head = document.getElementById(key+'l');
-    head.innerHTML = key;
+    head.innerHTML = columndict[key];
     if (columndict[key].length > 1){
       var head = document.getElementById(key+'l');
       var newt = '&#9660 ' + head.innerHTML;
