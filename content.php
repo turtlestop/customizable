@@ -7,7 +7,7 @@ $url = parse_url(getenv($CLEAR_DATABASE_URL));
 $servername = $url["host"];
 $username = $url["user"];
 $pword = $url["pass"];
-$dbname = substr($url["path", 1]);
+$dbname = substr($url["path"], 1]);
 
 // Create connection
 $conn = new mysqli($servername, $username, $pword, $dbname);
