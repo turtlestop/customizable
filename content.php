@@ -10,7 +10,7 @@
 // $dbname = substr($url["path"], 1);
 
 $dbname = "heroku_387cf972599d81e";
-$userame ="b301d1b1d5515f";
+$username ="b301d1b1d5515f";
 $pword = "7474867e";
 $servername = "us-cdbr-iron-east-03.cleardb.net";
 
