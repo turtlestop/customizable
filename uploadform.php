@@ -243,11 +243,11 @@ function showdrop(id){
 
 window.onload = function() {
   getpdfs()
-  document.getElementById("todayl").onclick = function(){showdrop("first"); return false};
+  document.getElementById("TODAYl").onclick = function(){showdrop("first"); return false};
   document.getElementById("staffl").onclick = function(){showdrop("staffb"); return false};
   document.getElementById("formsl").onclick = function(){showdrop("formsb"); return false};
   document.getElementById("buildingl").onclick = function(){showdrop("buildingb"); return false};
-  document.getElementById("calendarl").onclick = function(){showdrop("calendarb"); return false};
+  document.getElementById("CALENDARl").onclick = function(){showdrop("CALENDARlb"); return false};
 
   // document.getElementById("futureb").onclick = function(){console.log(this.id);showdrop(this.id); return false};
   // document.getElementById("bulletin").onclick = function(){console.log("hi!");displaybboard(); return false}
@@ -257,13 +257,13 @@ window.onload = function() {
 
 <div id="navdiv">
     <div class="button drop" id="first">
-      <div class="dropbtn2" class="active" id="todayl">&#9660 Today</div>
-      <div class="dropcontent" id="today">
+      <div class="dropbtn2" class="active" id="TODAYl">&#9660 Today</div>
+      <div class="dropcontent" id="TODAY">
       </div>
   </div>
-  <div class="button drop" id="calendarb">
-    <div class="dropbtn2" id="calendarl">calendar</div>
-    <div class="dropcontent" id="calendar"></div>
+  <div class="button drop" id="CALENDARb">
+    <div class="dropbtn2" id="CALENDARl">calendar</div>
+    <div class="dropcontent" id="CALENDAR"></div>
   </div>
   <div class="button drop" id="formsb">
         <div class="dropbtn2" id="formsl">&#9660 Forms</div>
