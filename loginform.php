@@ -14,6 +14,8 @@ include('login.php'); // Includes Login Script
 <body>
 
 <script>
+// var j = <?php $_?>
+
 console.log('testg');
 </script>
 

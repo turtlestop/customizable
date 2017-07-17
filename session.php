@@ -17,6 +17,8 @@ $pass = $_SESSION['pass'];
 $check=$connection->query("select username from login where username='$user_check'");
 if($check->num_rows == 0){
 $connection->close(); // Closing Connection
+
+
 header('Location: index.html'); // Redirecting To Home Page
 }
 ?>

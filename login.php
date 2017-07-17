@@ -1,6 +1,5 @@
 <?php
 
-
 session_start(); // Starting Session
 $error=''; // Variable To Store Error Message
 if (isset($_POST['submit'])) {
@@ -24,7 +23,7 @@ $password=$_POST['password'];
 // $dbname = substr($url["path"], 1);
 
 $dbname = "heroku_387cf972599d81e";
-$rootname ="b301d1b1d5515f";
+$rootname = "b301d1b1d5515f";
 $rootword = "7474867e";
 $servername = "us-cdbr-iron-east-03.cleardb.net";
 
@@ -51,7 +50,10 @@ if ($result->num_rows > 0) {
 $_SESSION['login_user']=$username; // Initializing Session
 $_SESSION['pass'] = $password;
 $_SESSION['test'] = "green";
-header("location: profile.php"); // Redirecting To Other Page
+
+$error = 'ok, SESSION[login_user] is ' + $_SESSION['login_user'] + ' and SESSION[pass] is ' + $_SESSION['pass']; 
+
+// header("location: profile.php"); // Redirecting To Other Page
 }
  else {
 
