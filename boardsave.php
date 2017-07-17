@@ -5,10 +5,10 @@ $fname = $_POST["fname"];
 $fmsg = $_POST["fmsg"];
 $act = $_POST["act"];
 
-$dbname = "heroku_387cf972599d81e";
-$username ="b301d1b1d5515f";
-$password = "7474867e";
-$servername = "us-cdbr-iron-east-03.cleardb.net";
+$dbname = getenv("DBNAME");
+$username =getenv("USERNAME");
+$password = getenv("PASSWORD");
+$servername = getenv("SERVERNAME")
 
 if ($act === "save"){
   include('session.php');

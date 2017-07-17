@@ -1,10 +1,9 @@
 <?php
 
-$dbname = "heroku_387cf972599d81e";
-$rootname ="b301d1b1d5515f";
-$rootword = "7474867e";
-$servername = "us-cdbr-iron-east-03.cleardb.net";
-
+$dbname = getenv("DBNAME");
+$rootword =getenv("USERNAME");
+$rootname = getenv("PASSWORD");
+$servername = getenv("SERVERNAME")
 
 // Establishing Connection with Server by passing server_name, user_id and password as a parameter
 $connection = new mysqli($servername, $rootname, $rootword, $dbname);
@@ -19,6 +18,6 @@ if($check->num_rows == 0){
 $connection->close(); // Closing Connection
 
 
-header('Location: index.html'); // Redirecting To Home Page
+header('Location: loginform.php'); // Redirecting To Home Page
 }
 ?>
