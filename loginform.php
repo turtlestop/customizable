@@ -13,6 +13,10 @@ include('login.php'); // Includes Login Script
 </head>
 <body>
 
+<script>
+console.log('testg');
+</script>
+
 <header>
 <div id="headerdiv">
 <img id="headerimg" src="images/header.jpg" height="" width="" alt="The Awesome Nightly Show Intranet" onclick="location.href='logout.php'">
