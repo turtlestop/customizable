@@ -45,7 +45,7 @@ function getpdfs(){
     }}
   //   else {console.log('response:  ' + xmlhttp.responseText);}
   }
-  xmlhttp.open("GET", "http://localhost:8888/content.php", true);
+  xmlhttp.open("GET", "content.php", true);
   xmlhttp.send();
   };
 
@@ -162,7 +162,7 @@ xmlhttp.onreadystatechange = function() {
     };
 text = 'act=load';
 console.log('loadboard');
-xmlhttp.open("POST", "http://localhost:8888/boardsave.php", true);
+xmlhttp.open("POST", "boardsave.php", true);
 xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 xmlhttp.send(text);
 };
@@ -324,24 +324,3 @@ function displayinitial(){
     p = todaylist[0]
     main.innerHTML = "<embed src='" + p + "#toolbar=0&navpanes=0&scrollbar=0&view=fitH' type='application/pdf' width=80% height=500px zoom=100%> alt : <a href='" + p + "'>" + p + "</a></embed>";
   }}
-
-
-
-//
-// function onload() {
-//   console.log("running onload");
-//   var options = {
-//     height: "500px",
-//     width: "100%",
-//     pdfOpenParams: {
-//          view: 'Fit',
-//          scrollbars: '0',
-//          toolbar: '0',
-//          statusbar: '0',
-//          navpanes: '0' }};
-//
-// PDFObject.embed("http://localhost:8888/pdfs/today/TNSprodsched.pdf", "#lpdf", options);
-// PDFObject.embed("http://localhost:8888/pdfs/today/LunchMenu.pdf", "#rpdf", options);
-// };
-//
-// onload();
