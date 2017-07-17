@@ -5,9 +5,11 @@ $fname = $_POST["fname"];
 $fmsg = $_POST["fmsg"];
 $act = $_POST["act"];
 
-$servername = "localhost";
-$username = 'root';
-$dbname = "bulletin";
+$dbname = "heroku_387cf972599d81e";
+$username ="b301d1b1d5515f";
+$pword = "7474867e";
+$servername = "us-cdbr-iron-east-03.cleardb.net";
+
 $act = $_POST["act"];
 
 if ($act === "save"){
@@ -87,8 +89,8 @@ $conn->close();
 
 elseif ($act === "load") {
   // Create connection
-  $pword = 'root';
-  $username = 'root';
+  // $pword = 'root';
+  // $username = 'root';
   $conn = new mysqli($servername, $username, $pword, $dbname);
   // Check connection
   if ($conn->connect_error) {
