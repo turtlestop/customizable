@@ -1,8 +1,8 @@
 <?php
 include('session.php');
 
-$username = $_SESSION['login_user'];
-$password = $_SESSION['pass'];
+// $username = $_SESSION['login_user'];
+// $password = $_SESSION['pass'];
 
 $act = $_POST['act'];
 if ($act == 'up'){
@@ -67,9 +67,12 @@ if ($uploaded == 1){
   $title = $_POST['title'];
   $column = $_POST['ffunc'];
   //
-  $servername = "localhost";
 
-  $dbname = "bulletin";
+  $dbname = "heroku_387cf972599d81e";
+  $username ="b301d1b1d5515f";
+  $password = "7474867e";
+  $servername = "us-cdbr-iron-east-03.cleardb.net";
+
   //
   $conn = new mysqli($servername, $username, $password, $dbname);
   // Check connection
