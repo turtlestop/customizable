@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TNS Intranet</title>
+<link href="styles/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<script type="text/javascript" src="scripts/pdfobject.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script>
+
+<header>
+<div id="headerdiv">
+<img id="headerimg" src="images/header.jpg" height="" width="" alt="The Awesome Nightly Show Intranet">
+<div id="social">
+  <img class="icon" src="images/cc3.png" height="42" width="42" onmouseover="this.src='images/cc4.png'" onmouseout="this.src='images/cc3.png'" onclick="location.href='http://www.cc.com/shows/the-nightly-show'">
+  <img class="icon" src="images/twitter.png" height="42" width="42" onmouseover="this.src='images/twitterd.png'" onmouseout="this.src='images/twitter.png'" onclick="location.href='https://twitter.com/nightlyshow?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor'">
+  <img class="icon" src="images/facebook.png" height="42" width="42" onmouseover="this.src='images/facebookd.png'" onmouseout="this.src='images/facebook.png'" onclick="location.href='https://www.facebook.com/thenightlyshow/'">
+  <img class="icon" src="images/instagram.png" height="42" width="42" onmouseover="this.src='images/instagramd.png'" onmouseout="this.src='images/instagram.png'" onclick="location.href='https://www.instagram.com/thenightlyshow/'">
+</div>
+
+</div>
+</header>
+<div id="edit">
+<img class="icon" src="images/edit.png" height="42" width="42" onmouseover="this.src='images/edit2.png'" onmouseout="this.src='images/edit.png'" onclick="location.href='loginform.php'">
+</div>
+  <div id="navdiv">
+
+      <div class="button drop" id="first">
+        <div class="dropbtn2" class="active" id="todayl">Today</div>
+        <div class="dropcontent" id="today">
+        </div>
+    </div>
+    <div class="button drop" id="calendarb">
+      <div class="dropbtn2" id="calendarl">Calendar</div>
+      <div class="dropcontent" id="calendar"></div>
+    </div>
+    <div class="button drop" id="formsb">
+          <div class="dropbtn2" id="formsl">Forms</div>
+          <div class="dropcontent" id="forms"></div>
+    </div>
+    <div class="button drop" id="staffb">
+          <div class="dropbtn2" id="staffl">Staff &amp Crew</div>
+          <div class="dropcontent" id="staff">
+          </div>
+    </div>
+    <div class="button drop" id="buildingb">
+          <div class="dropbtn2" id="buildingl">Building</div>
+          <div class="dropcontent" id="building">
+          </div>
+    </div>
+    <!-- <div class="button" id="futureb">
+      <div class="dropbtn2" >Future</div>
+      <div class="dropcontent" id="future">
+      </div>
+    </div> -->
+    <div class="button" id="last">
+        <a id="bulletin" href="">Bulletin Board</a>
+    </div>
+    <span class="stretch"></span>
+  </div>
+<div id="wrap">
+<div id="lpdf"></div>
+<div id="rpdf"></div>
+</div>
+</body>
+</html>

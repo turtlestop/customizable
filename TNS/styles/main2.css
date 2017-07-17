@@ -1,0 +1,114 @@
+
+#headerdiv {
+  border: none;
+}
+
+#headerimg {
+  width: 100%;
+  height: auto;
+  border: none;
+}
+
+
+body {
+  font-family: Arial-Black, Impact, Charcoal, sans-serif ;
+  font-size: 12px;
+}
+
+#navdiv {
+  border: 2px solid grey;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  /*background-color: grey;*/
+
+}
+
+#wrap {
+  padding: 25px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;;
+    white-space: nowrap;
+    font-size: 26px;
+}
+
+#test {
+  padding-left: 15px;
+  margin-left: 15px;
+}
+
+li, #test {
+    display: inline-block;
+    /*float: left;*/
+    border-top: 2px solid red;
+    border-left: 2px solid red;
+    border-bottom: 2px solid red;
+    border-right: 2px solid red;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: red;
+    text-align: center;
+    padding: 8px 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+li:last-child {
+   border-right: 2px solid red;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  color: white;
+  background-color: red;
+}
+
+
+li.dropdown {
+    display: inline-block;
+}
+
+li#dropdown {
+    display: inline-block;
+}
+
+
+.dropcontent {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropcontent a {
+    color: red;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    text-transform: none;
+}
+
+.dropcontent a:hover {
+  color: white;
+  background-color: red;
+}
+
+.dropdown:hover .dropcontent {
+    display: block;
+}
+
+main {
+  padding-top: 50px;
+  background-color: white;
+  border: 2px solid red;
+}
