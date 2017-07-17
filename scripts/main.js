@@ -271,7 +271,7 @@ headers = {
 function updatetoolbar(obj){
   todaylist = []
     for (i=0; i<obj.length; i++){
-      if (obj[i]['columncat'] == 'today') {
+      if (obj[i]['columncat'] == 'TODAY') {
       todaylist.push(obj[i]['filepath'])
       }
     if (obj[i]['columncat'] !== ""){
