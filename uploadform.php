@@ -182,7 +182,7 @@ function upload(){
         }
         else {
           var msg = document.getElementById("message");
-          msg.innerHTML = "I'm sorry! There was a problem uploading your file."
+          msg.innerHTML = xmlhttp.responseText;
         }
       }
       };
